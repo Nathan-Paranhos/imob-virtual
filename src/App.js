@@ -7,7 +7,7 @@ import ThemeToggle from './components/UI/ThemeToggle';
 import Login from './components/Auth/Login';
 import ProfileForm from './components/Profile/ProfileForm';
 import { FaHome, FaCamera, FaCube, FaUser, FaSearch, FaBell, FaPlus, FaSignOutAlt } from 'react-icons/fa';
-import { auth, logoutUser } from './services/firebase';
+import { logoutUser } from './services/firebase';
 import { AuthProvider, useAuth } from './context/AuthContext';
 
 // Componente de loading
