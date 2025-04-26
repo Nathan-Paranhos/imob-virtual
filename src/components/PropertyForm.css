@@ -1,0 +1,32 @@
+/* src/components/PropertyForm.css */
+.complete-btn {
+  background: var(--roxo-principal);
+  color: white;
+  padding: 10px 25px;
+  border-radius: 8px;
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.property-image {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.valor-input {
+  position: relative;
+}
+
+.valor-input::before {
+  content: 'R$';
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--roxo-principal);
+  font-weight: bold;
+}

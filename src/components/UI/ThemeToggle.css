@@ -1,0 +1,62 @@
+/* src/components/UI/ThemeToggle.css */
+.theme-toggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.toggle-track {
+  width: 50px;
+  height: 24px;
+  border-radius: 12px;
+  position: relative;
+  transition: all 0.3s ease;
+  padding: 2px;
+}
+
+.toggle-track.dark {
+  background-color: #333355;
+}
+
+.toggle-track.light {
+  background-color: #e0e0e0;
+}
+
+.toggle-thumb {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: white;
+  position: absolute;
+  transition: all 0.3s ease;
+}
+
+.toggle-track.dark .toggle-thumb {
+  transform: translateX(26px);
+}
+
+.toggle-track.light .toggle-thumb {
+  transform: translateX(0);
+}
+
+.toggle-icon {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: all 0.3s ease;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.toggle-track.dark .toggle-icon {
+  right: 4px;
+  color: #bb86fc;
+}
+
+.toggle-track.light .toggle-icon {
+  left: 4px;
+  color: #ff9800;
+}

@@ -1,0 +1,47 @@
+/* src/components/UI/Logo.css */
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .logo-icon {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    background-color: var(--primary-color);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+  
+  .logo-house {
+    width: 20px;
+    height: 16px;
+    background-color: white;
+    position: relative;
+    clip-path: polygon(0 100%, 50% 0, 100% 100%);
+    z-index: 2;
+  }
+  
+  .logo-3d {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 5px;
+    transform: perspective(100px) rotateY(30deg);
+    z-index: 1;
+  }
+  
+  .logo-text {
+    font-size: 20px;
+    font-weight: 700;
+    color: #9c27b0;
+  }
+  
+  .dark-mode .logo-text {
+    color: #bb86fc;
+  }
