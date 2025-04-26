@@ -109,22 +109,6 @@ const ProfileForm = ({ user }) => {
     }
   };
 
-  const validarCampos = (values) => {
-    const errors = {};
-    
-    if (!values.valor) {
-      errors.valor = 'Valor obrigatório';
-    } else if (isNaN(values.valor)) {
-      errors.valor = 'Valor deve ser numérico';
-    }
-
-    if (!values.fotoPrincipal) {
-      errors.fotoPrincipal = 'Foto principal obrigatória';
-    }
-
-    return errors;
-  };
-
   return (
     <div className="profile-form-container">
       <h2>Seu Perfil</h2>
@@ -147,7 +131,7 @@ const ProfileForm = ({ user }) => {
           <div className="profile-photo-actions">
             <label htmlFor="photo-upload" className="photo-upload-btn">
               <FaCamera /><span>Alterar</span>
-              <input type="file" id="photo-upload" accept="image/*"
+              <input type="file" id="photo encarregar" accept="image/*"
                 onChange={handlePhotoUpload} disabled={uploadLoading || loading} />
             </label>
             {formData.profilePicture && (
